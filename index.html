@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Netflix Clone</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+
+  <link rel="stylesheet" href="assets/index-b5961fba.css">
+</head>
+
+<body>
+    <!-- Preloader -->
+  <div id="loader"></div>
+   <!--------->
+    <!-- Header-->
+  <header id="header"
+    class=" w-full fixed z-[900] top-0  flex flex-wrap p-5 flex-row  items-center px-20  justify-between "></header>
+    <!-- ----->
+    <!--Main Section-->
+  <main>
+<!-- Home --->
+    <div id="Home" class="tabcontent">
+      <!-- Hero Carasol -->
+      <div class="hero-slider  h-screen w-full overflow-hidden">
+        <div style="--swiper-navigation-color: #E50914;" class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+
+              <div id="hero-slider-1"></div>
+              <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+            </div>
+            <div class="swiper-slide">
+
+              <div id="hero-slider-2"></div>
+              <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+            </div>
+            <div class="swiper-slide">
+
+              <div id="hero-slider-3"></div>
+              <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+            </div>
+            <div class="swiper-slide">
+
+              <div id="hero-slider-4"></div>
+              <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+            </div>
+            <div class="swiper-slide">
+
+              <div id="hero-slider-5"></div>
+              <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+            </div>
+            <div class="swiper-slide">
+
+              <div id="hero-slider-6"></div>
+              <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+            </div>
+          
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <!-- ------------ -->
+      <!-- Virtical  Carasol -->
+      <div class="virtical-carasol bg-black  ">
+        <h1 class="text-2xl text-white font-medium pl-10 pt-2 ">Popular on Netflix</h1>
+<div class="virtical-carasol-content">
+
+  <div class="carasol-content-1 px-5 ">
+    <div style="--swiper-navigation-color: #E50914;" class="swiper mySwiper-1">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide hover:z-50 ">  <div id="card-7"></div>   </div>
+        <div class="swiper-slide hover:z-50 ">  <div id="card-8"></div>   </div>
+        <div class="swiper-slide hover:z-50 ">  <div id="card-9"></div>   </div>
+        <div class="swiper-slide hover:z-50 ">  <div id="card-10"></div>   </div>
+        <div class="swiper-slide hover:z-50 ">  <div id="card-11"></div>   </div>
+        <div class="swiper-slide hover:z-50 ">  <div id="card-12"></div>   </div>
+        <div class="swiper-slide hover:z-50 ">  <div id="card-13"></div>   </div>
+        <div class="swiper-slide hover:z-50 ">  <div id="card-14"></div>   </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+
+  </div>
+  <div class="carasol-content-2">
+    
+  </div>
+  <div class="carasol-content-3">
+    
+  </div>
+  <div class="carasol-content-4">
+    
+  </div>
+
+</div>
+
+      </div>
+    </div>
+
+         <!---------->
+        <!-- Shows --->
+        <div id="Shows" class="tabcontent">
+          Tab 2 content
+      </div>
+      <!---------->
+
+      <!-- Movies ----->
+      <div id="Movies" class="tabcontent">
+          Tab 3 content
+      </div>
+      <!---------->
+
+      <!-- Popular --->
+      <div id="Popular" class="tabcontent">
+          Tab 4 content
+      </div>
+      <!----------->
+
+      <!-- List --->
+      <div id="List" class="tabcontent">
+          Tab 5 content
+      </div>
+      <!----------->
+
+
+  </main> 
+
+
+<footer id="footer" class=" bg-black footer pt-5"></footer>
+
+<script>const header = document.querySelector('header');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 0) {
+      header.classList.add('scroll');
+    } else {
+      header.classList.remove('scroll');
+    }
+  });
+</script>
+  <script src="src/js/preloader.js"></script>
+  <script src="src/js/header.js"></script>
+  <script src="src/js/hero-carousel.js"></script>
+  <script src="src/js/cards.js"></script>
+  <script src="src/js/footer.js"></script>
+  <script src="src/js/tab-script.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 0,
+  
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+      loop: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+    var swiper = new Swiper(".mySwiper-1", {
+      slidesPerView: 5,
+      spaceBetween: 70,
+      grabCursor: true,
+      loop: false,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+</body>
+
+</html>
