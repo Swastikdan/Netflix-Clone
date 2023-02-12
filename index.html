@@ -10,36 +10,10 @@
   
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-
+  
 
   <link rel="stylesheet" href="assets/index-b5961fba.css">
-  <script>if (screen.width < 1300) {
-  var popup = document.createElement("div");
-  popup.style.position = "fixed";
-  popup.style.top = "0";
-  popup.style.left = "0";
-  popup.style.width = "100%";
-  popup.style.height = "100%";
-  popup.style.backgroundColor = "rgba(0,0,0,0.8)";
-  popup.style.color = "white";
-  popup.style.zIndex = "99999";
-  popup.style.display = "flex";
-  popup.style.justifyContent = "center";
-  popup.style.alignItems = "center";
-  popup.innerHTML = "<p>Please open this website on a larger device.</p>";
-  var overlay = document.createElement("div");
-  overlay.style.position = "fixed";
-  overlay.style.top = "0";
-  overlay.style.left = "0";
-  overlay.style.width = "100%";
-  overlay.style.height = "100%";
-  overlay.style.backgroundColor = "rgba(0,0,0,0.5)";
-  overlay.style.zIndex = "99998";
-
-  document.body.appendChild(popup);
-  document.body.appendChild(overlay);
-}
-</script>
+<script defer  src="/src/js/device.js"></script>
 </head>
 
 <body>
@@ -164,49 +138,19 @@
 
 <footer id="footer" class=" bg-black footer pt-5"></footer>
 
-<script>const header = document.querySelector('header');
-
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 0) {
-      header.classList.add('scroll');
-    } else {
-      header.classList.remove('scroll');
-    }
-  });
+<script>
 </script>
-  <script src="src/js/preloader.js"></script>
-  <script src="src/js/header.js"></script>
-  <script src="src/js/hero-carousel.js"></script>
-  <script src="src/js/cards.js"></script>
-  <script src="src/js/footer.js"></script>
-  <script src="src/js/tab-script.js"></script>
+  <script src="/src/js/preloader.js"></script>
+  <script src="/src/js/header.js"></script>
+  <script src="/src/js/hero-carousel.js"></script>
+  <script src="/src/js/cards.js"></script>
+  <script src="/src/js/footer.js"></script>
+  <script src="/src/js/tab-script.js"></script>
+  <script  defer src="/src/js/car-ini.js"></script>
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script>
-    var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 1,
-      spaceBetween: 0,
-  
-      autoplay: {
-        delay: 5000,
-        disableOnInteraction: false,
-      },
-      loop: true,
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
-    var swiper = new Swiper(".mySwiper-1", {
-      slidesPerView: 5,
-      spaceBetween: 70,
-      grabCursor: true,
-      loop: false,
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
+
   </script>
 </body>
 
