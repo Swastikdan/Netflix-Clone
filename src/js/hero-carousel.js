@@ -23,11 +23,11 @@ function generateMovieData(movieId) {
   movieContainer.innerHTML = `
 
   <div class="carousel-item active relative float-left w-full">
-  <img class="pl-20 bg-gray-800" src="${movieData.imagemain}" class=" h-[750px] w-full" alt="${movieData.title}" loading="lazy" />
+  <img class="pl-20 bg-gray-800" src="${movieData.imagemain}" class=" h-[750px] w-full" alt="${movieData.title}" />
   <div class="card-text pt-40 pl-20 items-center space-y-10 absolute left-0 top-0 bottom-0 w-2/5 p-5 text-white overflow-hidden "
       style="background: rgb(0,0,0);
 background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(53,50,50,0.8380602240896359) 71%,rgba(53,50,50,0.6380602240896359) 81%,rgba(53,50,50,0.3380602240896359) 95%, rgba(0,0,0,0) 100%);">
-      <img width="400px" src="${movieData.imagetext}" alt="${movieData.title}" loading="lazy"/>
+      <img width="400px" src="${movieData.imagetext}" alt="${movieData.title}" />
       <div class="space-y-4">
           <span class="text-[32px] font-semibold">${movieData.title}</span> <br>
           <p class="text-[14px] font-medium text-gray-400">
