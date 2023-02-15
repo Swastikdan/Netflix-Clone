@@ -36,6 +36,15 @@ This project uses Tailwind CSS for styling, which is included  as compliled css 
 ## Contributing
 This is a learning project and contributions are not expected. However, if you have any suggestions or find any issues, feel free to submit a pull request or open an issue.
 
+## Live Demo
+
+You can view a live demo of this project on [CodePen](https://codepen.io/swastik_dan/pen/abazwQm).
+
+<iframe height="500" style="width: 100%;" scrolling="no" title="Netflix Clone" src="https://codepen.io/swastik_dan/embed/abazwQm?height=500&theme-id=dark&default-tab=html,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/swastik_dan/pen/abazwQm'>Netflix Clone</a> by Swastik Dan (<a href='https://codepen.io/swastik_dan'>@swastik_dan</a>)
+  on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
 ## Screenshots
 
 ![Site Screenshot Hero](https://res.cloudinary.com/dytlajwyl/image/upload/v1676496335/Netflix/Screenshot_127_hjpzr7.png)
