@@ -8,6 +8,8 @@
   }
   body {
     font-family: NetflixSans;
+    min-width: 100%;
+
   }
   *,
   :before,
@@ -900,4 +902,16 @@
     --tw-text-opacity: 1;
     color: rgb(229 231 235 / var(--tw-text-opacity));
   }
-  
+  .text-xl {
+    font-size: 1.25rem/* 20px */;
+    line-height: 1.75rem/* 28px */;
+}
+.text-center {
+  text-align: center;
+}
+
+@media (min-width: 1024px) {
+  .lg\:hidden {
+      display: none;
+  }
+} 
