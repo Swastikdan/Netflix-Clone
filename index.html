@@ -3,155 +3,105 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=1500px, initial-scale=1.0">
+  <meta name="viewport" content="width=1500, initial-scale=1.0">
   <title>Netflix Clone</title>
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-  
 
-  <link rel="stylesheet" href="assets/index-b5961fba.css">
-<!-- <script defer  src="/src/js/device.js"></script> -->
+
+  <script type="module" crossorigin src="/assets/index-f2bfe869.js"></script>
+  <link rel="stylesheet" href="/assets/index-0b47382b.css">
 </head>
 
 <body>
-    <!-- Preloader -->
+  <!-- Preloader -->
   <div id="loader"></div>
-   <!--------->
-    <!-- Header-->
+  <!--------->
+  <!-- Header-->
   <header id="header"
     class=" w-full fixed z-[900] top-0  flex flex-wrap p-5 flex-row  items-center px-20  justify-between "></header>
-    <!-- ----->
-    <!--Main Section-->
+  <!-- ----->
+  <!--Main Section-->
   <main>
-<!-- Home --->
-    <div id="Home" class="tabcontent">
-      <!-- Hero Carasol -->
-      <div class="hero-slider  h-[750px] w-full overflow-hidden ">
-        <div style="--swiper-navigation-color: #E50914;" class="swiper mySwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-
-              <div id="hero-slider-1"></div>
-              <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-            </div>
-            <div class="swiper-slide">
-
-              <div id="hero-slider-2"></div>
-              <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-            </div>
-            <div class="swiper-slide">
-
-              <div id="hero-slider-3"></div>
-              <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-            </div>
-            <div class="swiper-slide">
-
-              <div id="hero-slider-4"></div>
-              <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-            </div>
-            <div class="swiper-slide">
-
-              <div id="hero-slider-5"></div>
-              <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-            </div>
-            <div class="swiper-slide">
-
-              <div id="hero-slider-6"></div>
-              <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-            </div>
-          
-          </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-pagination"></div>
+    <!-- Hero Carasol -->
+    <div class="hero-slider  h-[750px] w-full overflow-hidden" id="sliderDisplay"></div>
+    <!-- ------------ -->
+    <!-- Virtical  Carasol -->
+    <div class="virtical-carasol bg-black  ">
+      <div class="virtical-carasol-content">
+        <h1 class="text-2xl text-white font-medium pl-10 pt-4 ">Recomended For You</h1>
+        <div id="carasol-content-1" class="px-5"></div>
+        <h1 class="text-2xl text-white font-medium pl-10 pt-4 ">Popular In Netflix</h1>
+        <div id="carasol-content-2" class="px-5"></div>
+        <h1 class="text-2xl text-white font-medium pl-10 pt-4 ">New Releases</h1>
+        <div id="carasol-content-3" class="px-5"></div>
+        <h1 class="text-2xl text-white font-medium pl-10 pt-4 ">Bollywood Movies</h1>
+        <div id="carasol-content-4" class="px-5"></div>
+      </div>
+    </div>
+    <!-- 
+    <div id="myModal" class="modal">
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+        
+        <div class="mySlides">
+        <div class="video">
+        <iframe width="100%" height="600" src="https://www.youtube.com/embed/P-E-IGQCsPo?rel=0&autoplay=1" srcdoc="<style>*{display:block;padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:-1px;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.2em black}</style><a href='https://www.youtube.com/embed/P-E-IGQCsPo?rel=0&autoplay=1'><img src='https://img.youtube.com/vi/P-E-IGQCsPo/sddefault.jpg' alt='Video Title Goes Here' loading='lazy'><span>▶</span></a>" allow="autoplay fullscreen" allowfullscreen title="Video Title Goes Here" loading="lazy"></iframe>
         </div>
-      </div>
-      <!-- ------------ -->
-      <!-- Virtical  Carasol -->
-      <div class="virtical-carasol bg-black w-auto  ">
-        <h1 class="text-2xl text-white font-medium pl-10 pt-2 ">Popular on Netflix</h1>
-<div class="virtical-carasol-content">
+        </div>
+        
+        <div class="mySlides">
+        
+        </div>
+        
+        <div class="mySlides">
+        
+        </div>
+        
+        <div class="mySlides">
+        
+        </div>
+        
+        
+        
+            </div>
+        </div>
+    </div> -->
+    <!-- ------------ -->
+    <!-- <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/P-E-IGQCsPo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
 
-  <div class="carasol-content-1 px-5 ">
-    <div style="--swiper-navigation-color: #E50914;" class="swiper mySwiper-1">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide hover:z-50 ">  <div id="card-7"></div>   </div>
-        <div class="swiper-slide hover:z-50 ">  <div id="card-8"></div>   </div>
-        <div class="swiper-slide hover:z-50 ">  <div id="card-9"></div>   </div>
-        <div class="swiper-slide hover:z-50 ">  <div id="card-10"></div>   </div>
-        <div class="swiper-slide hover:z-50 ">  <div id="card-11"></div>   </div>
-        <div class="swiper-slide hover:z-50 ">  <div id="card-12"></div>   </div>
-        <div class="swiper-slide hover:z-50 ">  <div id="card-13"></div>   </div>
-        <div class="swiper-slide hover:z-50 ">  <div id="card-14"></div>   </div>
-      </div>
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-    </div>
+    <!-- <div class="video">
+      <iframe src="https://www.youtube.com/embed/P-E-IGQCsPo?rel=0&autoplay=1" srcdoc="<style>*{display:block;padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:-1px;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.2em black}</style><a href='https://www.youtube.com/embed/P-E-IGQCsPo?rel=0&autoplay=1'><img src='https://img.youtube.com/vi/P-E-IGQCsPo/sddefault.jpg' alt='Video Title Goes Here' loading='lazy'><span>▶</span></a>" allow="autoplay fullscreen" allowfullscreen title="Video Title Goes Here" loading="lazy"></iframe>
+  </div> -->
 
-  </div>
-  <div class="carasol-content-2">
-    
-  </div>
-  <div class="carasol-content-3">
-    
-  </div>
-  <div class="carasol-content-4">
-    
-  </div>
+  </main>
+  <!-- <div id="popup-dspaly"></div> -->
+  <div id="video-dispaly"></div>
 
-</div>
-
-      </div>
-    </div>
-
-         <!---------->
-        <!-- Shows --->
-        <div id="Shows" class="tabcontent">
-          Tab 2 content
-      </div>
-      <!---------->
-
-      <!-- Movies ----->
-      <div id="Movies" class="tabcontent">
-          Tab 3 content
-      </div>
-      <!---------->
-
-      <!-- Popular --->
-      <div id="Popular" class="tabcontent">
-          Tab 4 content
-      </div>
-      <!----------->
-
-      <!-- List --->
-      <div id="List" class="tabcontent">
-          Tab 5 content
-      </div>
-      <!----------->
-
-
-  </main> 
-
-
-<footer id="footer" class=" bg-black footer pt-5"></footer>
-
-<script>
-</script>
-  <script src="/src/js/preloader.js"></script>
-  <script src="/src/js/header.js"></script>
-  <script src="/src/js/hero-carousel.js"></script>
-  <script src="/src/js/cards.js"></script>
-  <script src="/src/js/footer.js"></script>
-  <script src="/src/js/tab-script.js"></script>
-  <script  defer src="/src/js/car-ini.js"></script>
-  <!-- Swiper JS -->
+  <footer id="footer" class=" bg-black footer pt-5"></footer>
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-  <script>
 
+  
+  
+  <script>
+    // Open the popup with the given ID
+    function openSlide(id) {
+      document.getElementById("popup-" + id).style.display = "block";
+    }
+
+    // Close the popup with the given ID
+    function closeSlide(id) {
+      document.getElementById("popup-" + id).style.display = "none";
+    }
   </script>
+
+
+
+
+
+
 </body>
 
 </html>
