@@ -31,7 +31,7 @@ open index.html
 You can also view the live demo of the project [here](https://test-site.swastikdan.tech/).
 
 ## Dependencies
-This project uses Tailwind CSS for styling, which is included via a CDN link in the `index.html` file. No other dependencies are required.
+This project uses Tailwind CSS for styling, which is included  as compliled css in `style.css` in the `index.html` file. [Swiper](https://swiperjs.com/get-started) is used for the sliders.
 
 ## Contributing
 This is a learning project and contributions are not expected. However, if you have any suggestions or find any issues, feel free to submit a pull request or open an issue.
