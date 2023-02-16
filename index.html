@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=1500px, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=1500px, initial-scale=1.0" />
   <title>Netflix Clone</title>
   <meta
     content="watch movies, movies online, watch TV, TV online, TV shows online, watch TV shows, stream movies, stream tv, instant streaming, watch online, movies, watch movies India, watch TV online, no download, full length movies"
@@ -19,41 +20,51 @@
   <link rel="apple-touch-icon" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.png" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <script type="module" crossorigin src="/script.js"></script>
-  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/style.css" />
 </head>
+
 <body>
   <!-- Preloader -->
   <div id="loader"></div>
   <div
-    class="z-[1000] fixed overflow-hidden w-full h-full  bg-black  flex items-center justify-center text-white text-center text-xl p-5 lg:hidden ">
-    Please Open In a Bigger  Device <br> This Site is Not Optimised For Smaller Devices
+    class="z-[1000] fixed overflow-hidden w-full h-full bg-black flex items-center justify-center text-white text-center text-xl p-5 lg:hidden">
+    Please Open In a Bigger Device <br />
+    This Site is Not Optimised For Smaller Devices
   </div>
   <!--------->
   <!-- Header-->
-  <header id="header"
-    class=" w-full fixed z-[900] top-0  flex flex-wrap p-5 flex-row  items-center px-20  justify-between "></header>
+  <header id="header" class="w-full fixed z-[900] top-0 flex flex-wrap p-5 flex-row items-center px-20 justify-between">
+  </header>
   <!-- ----->
   <!--Main Section-->
   <main>
     <!-- Hero Carasol -->
-    <div class="hero-slider  h-[750px] w-full overflow-hidden" id="sliderDisplay"></div>
+    <div class="hero-slider h-[750px] w-full overflow-hidden" id="sliderDisplay"></div>
     <!-- ------------ -->
     <!-- Virtical  Carasol -->
-    <div class="virtical-carasol bg-black  ">
+    <div class="virtical-carasol bg-black">
       <div class="virtical-carasol-content">
-        <h1 class="text-2xl text-white font-medium pl-10 pt-4 ">Recomended For You</h1>
+        <h1 class="text-2xl text-white font-medium pl-10 pt-4">
+          Recomended For You
+        </h1>
         <div id="carasol-content-1" class="px-5"></div>
-        <h1 class="text-2xl text-white font-medium pl-10 pt-4 ">Popular In Netflix</h1>
+        <h1 class="text-2xl text-white font-medium pl-10 pt-4">
+          Popular In Netflix
+        </h1>
         <div id="carasol-content-2" class="px-5"></div>
-        <h1 class="text-2xl text-white font-medium pl-10 pt-4 ">New Releases</h1>
+        <h1 class="text-2xl text-white font-medium pl-10 pt-4">
+          New Releases
+        </h1>
         <div id="carasol-content-3" class="px-5"></div>
-        <h1 class="text-2xl text-white font-medium pl-10 pt-4 ">Bollywood Movies</h1>
+        <h1 class="text-2xl text-white font-medium pl-10 pt-4">
+          Bollywood Movies
+        </h1>
         <div id="carasol-content-4" class="px-5"></div>
       </div>
     </div>
   </main>
   <div id="video-dispaly"></div>
-  <footer id="footer" class=" bg-black footer pt-5"></footer>
+  <footer id="footer" class="bg-black footer pt-5"></footer>
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script>
     function openSlide(id) {
@@ -64,6 +75,5 @@
     }
   </script>
 </body>
+
 </html>
-
-
