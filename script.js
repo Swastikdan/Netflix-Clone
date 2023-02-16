@@ -90,7 +90,7 @@ window.addEventListener("scroll", () => {
 });
 let c,
   p = "https://res.cloudinary.com/demo/image/fetch/f_auto,q_auto/";
-fetch("/src/json/movies-db.json")
+fetch("/assets/movies-db.json")
   .then((i) => i.json())
   .then((i) => {
     (c = i),
@@ -243,7 +243,7 @@ class="max-w-screen-xl px-4 py-5 mx-auto space-y-8 overflow-hidden  tails-select
 document.getElementById("footer").innerHTML = b;
 let v,
   x = "https://res.cloudinary.com/demo/image/fetch/f_auto,q_auto/";
-fetch("/src/json/movies-db.json")
+fetch("/assets/movies-db.json")
   .then((i) => i.json())
   .then((i) => {
     v = i;
@@ -549,7 +549,7 @@ function M() {
 }
 document.addEventListener("DOMContentLoaded", M);
 let w;
-fetch("/src/json/video-id.json")
+fetch("/assets/video-id.json")
   .then((i) => i.json())
   .then((i) => {
     w = i;
