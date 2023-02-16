@@ -28,13 +28,17 @@ git clone https://github.com/your-username/netflix-clone.git
 cd netflix-clone
 open index.html
 ```
-You can also view the live demo of the project [here](https://test-site.swastikdan.tech/).
+You can also view the live demo of the project [here](https://netflix-clone.swastikdan.tech/).
 
 ## Dependencies
 This project uses Tailwind CSS for styling, which is included  as compliled css in `style.css` in the `index.html` file. [Swiper](https://swiperjs.com/get-started) is used for the sliders.
 
 ## Contributing
 This is a learning project and contributions are not expected. However, if you have any suggestions or find any issues, feel free to submit a pull request or open an issue.
+
+## Live Demo
+
+You can view a live demo of this project on [CodePen](https://codepen.io/swastik_dan/pen/abazwQm).
 
 ## Screenshots
 
@@ -43,8 +47,6 @@ This is a learning project and contributions are not expected. However, if you h
 ![Site Screenshot Middle Part](https://res.cloudinary.com/dytlajwyl/image/upload/v1676496311/Netflix/Screenshot_128_pr79gh.png)
 
 ![Site Screenshot Video Play](https://res.cloudinary.com/dytlajwyl/image/upload/v1676496277/Netflix/Screenshot_129_y6rokh.png)
-
-
 
 ## License
 
