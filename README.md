@@ -42,9 +42,9 @@ You can view a live demo of this project on [CodePen](https://codepen.io/swastik
 
 ## Screenshots
 
-![Site Screenshot Hero](https://res.cloudinary.com/dytlajwyl/image/upload/v1676496335/Netflix/Screenshot_127_hjpzr7.png)
+![Site Screenshot Hero](https://res.cloudinary.com/dytlajwyl/image/upload/v1676526114/Netflix/Screenshot_127_hjpzr7.png)
 
-![Site Screenshot Middle Part](https://res.cloudinary.com/dytlajwyl/image/upload/v1676496311/Netflix/Screenshot_128_pr79gh.png)
+![Site Screenshot Middle Part](https://res.cloudinary.com/dytlajwyl/image/upload/v1676526160/Netflix/Screenshot_128_pr79gh.png)
 
 ![Site Screenshot Video Play](https://res.cloudinary.com/dytlajwyl/image/upload/v1676496277/Netflix/Screenshot_129_y6rokh.png)
 
