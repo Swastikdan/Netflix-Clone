@@ -263,7 +263,7 @@ function z(i) {
 <div class=" card container relative w-[300px]  items-center duration-150 ease-in hover:scale-125 overflow-hidden rounded-xl cursor-pointer">
   <img width="300" class="block rounded-xl" src="${x + e.cardimage}" alt="${
     e.title
-  }" loading="lazy" />
+  }"  />
   <div class="overlay absolute bottom-0 flex w-[300px] justify-between space-y-3 bg-clip-padding px-4 py-3  text-white opacity-0 ease-in-out">
     <div class=" description space-y-1">
       <span class="text-[16px]  text-white">${e.title}</span> <br />
