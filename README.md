@@ -37,9 +37,13 @@ This is a learning project and contributions are not expected. However, if you h
 
 ## Screenshots
 
-![Site Screenshot Hero](https://res.cloudinary.com/dytlajwyl/image/upload/v1676526114/Netflix/Screenshot_127_hjpzr7.png)
+![Site Screenshot 1](https://ik.imagekit.io/swastik/Netflix/Github_Readme/Screenshot__137__0-mAebeXk.png)
 
-![Site Screenshot Middle Part](https://res.cloudinary.com/dytlajwyl/image/upload/v1676526160/Netflix/Screenshot_128_pr79gh.png)
+![Site Screenshot 2](https://ik.imagekit.io/swastik/Netflix/Github_Readme/Screenshot__140__3RsZjB9r1.png)
+
+![Site Screenshot 3](https://ik.imagekit.io/swastik/Netflix/Github_Readme/Screenshot__139__38K9xswDU.png)
+
+![Site Screenshot 4](https://ik.imagekit.io/swastik/Netflix/Github_Readme/Screenshot__138__tb1R4Rdf1.png)
 
 ![Site Screenshot Video Play](https://res.cloudinary.com/dytlajwyl/image/upload/v1676496277/Netflix/Screenshot_129_y6rokh.png)
 
