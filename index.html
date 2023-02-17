@@ -21,56 +21,49 @@
     <link rel="stylesheet" href="/assets/style-main.css">
 </head>
 <body>
-  <!-- Preloader -->
-  <div id="loader"></div>
-  <div
-    class="z-[1000] fixed overflow-hidden w-full h-full bg-black flex items-center justify-center text-white text-center text-xl p-5 lg:hidden" style="overflow: hidden;">
-    Please Open In a Bigger Device <br />
-    This Site is Not Optimised For Smaller Devices
-  </div>
-  <!--------->
-  <!-- Header-->
-  <header id="header" class="w-full fixed z-[900] top-0 flex flex-wrap p-5 flex-row items-center px-20 justify-between">
-  </header>
-  <!-- ----->
-  <!--Main Section-->
-  <main>
-    <!-- Hero Carasol -->
-    <div class="hero-slider h-[750px] w-full overflow-hidden" id="sliderDisplay"></div>
-    <!-- ------------ -->
-    <!-- Virtical  Carasol -->
-    <div class="virtical-carasol bg-black">
-      <div class="virtical-carasol-content">
-        <h1 class="text-2xl text-white font-medium pl-10 pt-4">
-          Recomended For You
-        </h1>
-        <div id="carasol-content-1" class="px-5"></div>
-        <h1 class="text-2xl text-white font-medium pl-10 pt-4">
-          Popular In Netflix
-        </h1>
-        <div id="carasol-content-2" class="px-5"></div>
-        <h1 class="text-2xl text-white font-medium pl-10 pt-4">
-          New Releases
-        </h1>
-        <div id="carasol-content-3" class="px-5"></div>
-        <h1 class="text-2xl text-white font-medium pl-10 pt-4">
-          Bollywood Movies
-        </h1>
-        <div id="carasol-content-4" class="px-5"></div>
-      </div>
+    <!-- Preloader -->
+    <div id="loader"></div>
+    <div
+        class="z-[1000] fixed overflow-hidden w-full h-full  bg-black  flex items-center justify-center text-white text-center text-xl p-5 lg:hidden ">
+        Please Open In a Bigger or Smaller Devie <br> This Site is Not Optimised For Smaller Devices
     </div>
-  </main>
-  <div id="video-dispaly"></div>
-  <footer id="footer" class="bg-black footer pt-5"></footer>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-  <script>
-    function openSlide(id) {
-      document.getElementById("popup-" + id).style.display = "block";
-    }
-    function closeSlide(id) {
-      document.getElementById("popup-" + id).style.display = "none";
-    }
-  </script>
+    <!--------->
+    <!-- Header-->
+    <header id="header"
+        class=" w-full fixed z-[900] top-0  flex flex-wrap p-5 flex-row  items-center px-20  justify-between "></header>
+    <!-- ----->
+    <!--Main Section-->
+    <main>
+        <!-- Hero Carasol -->
+        <div class="hero-slider  h-[750px] w-full overflow-hidden relative z-0" id="sliderDisplay"></div>
+        <!-- ------------ -->
+        <!-- Virtical  Carasol -->
+        <div class="wrap relative -mt-56   z-10">
+            <div class="virtical-carasol  ">
+                <div class="virtical-carasol-content">
+                    <h1 class="text-2xl text-white font-medium pl-10 pt-20 gr-bg-1  ">Recomended For You</h1>
+                    <div id="carasol-content-1" class="px-5 gr-bg-2 "></div>
+                    <h1 class="text-2xl text-white font-medium pl-10 pt-4  bg-black ">Popular In Netflix</h1>
+                    <div id="carasol-content-2" class="px-5 bg-black"></div>
+                    <h1 class="text-2xl text-white font-medium pl-10 pt-4  bg-black">New Releases</h1>
+                    <div id="carasol-content-3" class="px-5 bg-black"></div>
+                    <h1 class="text-2xl text-white font-medium pl-10 pt-4  bg-black ">Bollywood Movies</h1>
+                    <div id="carasol-content-4" class="px-5 bg-black"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div id="video-dispaly"></div>
+    <footer id="footer" class=" bg-black footer pt-5"></footer>
+    <script>
+        function openSlide(id) {
+            document.getElementById("popup-" + id).style.display = "block";
+        }
+        function closeSlide(id) {
+            document.getElementById("popup-" + id).style.display = "none";
+        }
+ 
+    </script>
 </body>
 
 </html>
