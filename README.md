@@ -24,7 +24,7 @@ open index.html
 
 ## Live Demo
 
-- You can also view the live  project [here](https://netflix-clone.swastikdan.tech/). or
+- You can also view the live  project [here](https://swastikdan.tech/netflix-clone/). or
 - You can view a live demo of this project on [CodePen](https://codepen.io/swastik_dan/pen/abazwQm).
 
 ## Dependencies
