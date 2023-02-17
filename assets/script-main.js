@@ -148,7 +148,7 @@ function $(t) {
               <span class="font-medium text-md">Play Now</span>
           </a>
           <a href="${e.pagelink}"
-              class="items-center bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 bg-black p-[6px] rounded-xl ring-1 ring-gray-500 hover:ring-gray-400" target="_blank">
+              class="items-center bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 bg-black p-[6px] rounded-xl ring-1 ring-gray-500 hover:ring-gray-400 z-11" target="_blank">
               <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
 
