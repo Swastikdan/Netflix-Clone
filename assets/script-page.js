@@ -1,50 +1,49 @@
 (function () {
   const e = document.createElement("link").relList;
   if (e && e.supports && e.supports("modulepreload")) return;
-  for (const t of document.querySelectorAll('link[rel="modulepreload"]')) r(t);
-  new MutationObserver((t) => {
-    for (const a of t)
-      if (a.type === "childList")
-        for (const o of a.addedNodes)
-          o.tagName === "LINK" && o.rel === "modulepreload" && r(o);
+  for (const i of document.querySelectorAll('link[rel="modulepreload"]')) s(i);
+  new MutationObserver((i) => {
+    for (const o of i)
+      if (o.type === "childList")
+        for (const r of o.addedNodes)
+          r.tagName === "LINK" && r.rel === "modulepreload" && s(r);
   }).observe(document, { childList: !0, subtree: !0 });
-  function i(t) {
-    const a = {};
+  function t(i) {
+    const o = {};
     return (
-      t.integrity && (a.integrity = t.integrity),
-      t.referrerpolicy && (a.referrerPolicy = t.referrerpolicy),
-      t.crossorigin === "use-credentials"
-        ? (a.credentials = "include")
-        : t.crossorigin === "anonymous"
-        ? (a.credentials = "omit")
-        : (a.credentials = "same-origin"),
-      a
+      i.integrity && (o.integrity = i.integrity),
+      i.referrerpolicy && (o.referrerPolicy = i.referrerpolicy),
+      i.crossorigin === "use-credentials"
+        ? (o.credentials = "include")
+        : i.crossorigin === "anonymous"
+        ? (o.credentials = "omit")
+        : (o.credentials = "same-origin"),
+      o
     );
   }
-  function r(t) {
-    if (t.ep) return;
-    t.ep = !0;
-    const a = i(t);
-    fetch(t.href, a);
+  function s(i) {
+    if (i.ep) return;
+    i.ep = !0;
+    const o = t(i);
+    fetch(i.href, o);
   }
 })();
-let d = "https://res.cloudinary.com/demo/image/fetch/f_auto,q_auto/";
-const c = `
+const m = `
 <div class="z-[1000] fixed overflow-hidden w-full h-full  bg-black flex items-center justify-center ">
-    <img class="animate-spin w-20" src="${d}https://assets.nflxext.com/en_us/pages/wiplayer/site-spinner.png"
+    <img class="animate-spin w-20" src="https://res.cloudinary.com/demo/image/fetch/f_auto,q_10/https://assets.nflxext.com/en_us/pages/wiplayer/site-spinner.png"
         alt="Preloader">
 </div>
 `;
-document.getElementById("loader").innerHTML = c;
-var p = document.getElementById("loader");
+document.getElementById("loader").innerHTML = m;
+var h = document.getElementById("loader");
 window.addEventListener("load", function () {
-  p.style.display = "none";
+  h.style.display = "none";
 });
 const g = `
 
 <div class="flex space-x-20">
     <a href="/">
-        <img width="100" src="/assets/netflix.svg" alt="Logo-Netflix">
+        <img width="100" src="https://res.cloudinary.com/dytlajwyl/image/upload/f_auto,q_auto/v1676497705/Netflix/netflix_klvt8k.svg" alt="Logo-Netflix">
     </a>
     <ul class="nav  flex flex-row flex-wrap   space-x-8 text-[16px]" >
         <li><a href="/"
@@ -78,7 +77,7 @@ const g = `
             d="M440.08 341.31c-1.66-2-3.29-4-4.89-5.93-22-26.61-35.31-42.67-35.31-118 0-39-9.33-71-27.72-95-13.56-17.73-31.89-31.18-56.05-41.12a3 3 0 01-.82-.67C306.6 51.49 282.82 32 256 32s-50.59 19.49-59.28 48.56a3.13 3.13 0 01-.81.65c-56.38 23.21-83.78 67.74-83.78 136.14 0 75.36-13.29 91.42-35.31 118-1.6 1.93-3.23 3.89-4.89 5.93a35.16 35.16 0 00-4.65 37.62c6.17 13 19.32 21.07 34.33 21.07H410.5c14.94 0 28-8.06 34.19-21a35.17 35.17 0 00-4.61-37.66zM256 480a80.06 80.06 0 0070.44-42.13 4 4 0 00-3.54-5.87H189.12a4 4 0 00-3.55 5.87A80.06 80.06 0 00256 480z">
         </path>
     </svg>
-    <img class="w-7 rounded-md " src="/assets/profile-pic.png" alt="Swastik Dan Profile Image">
+    <img class="w-7 rounded-md " src="https://res.cloudinary.com/dytlajwyl/image/upload/f_auto,q_20/v1676497722/Netflix/profile-pic_hrzhic.png" alt="Swastik Dan Profile Image">
 </div>
 
 
@@ -88,25 +87,25 @@ const l = document.querySelector("header");
 window.addEventListener("scroll", () => {
   window.scrollY > 0 ? l.classList.add("scroll") : l.classList.remove("scroll");
 });
-let n;
+let d;
 fetch("/assets/movies-db.json")
-  .then((s) => s.json())
-  .then((s) => {
-    n = s;
+  .then((a) => a.json())
+  .then((a) => {
+    d = a;
     for (let e = 1; e <= 38; e++) {
-      const i = m(e);
-      console.log(i);
+      const t = u(e);
+      console.log(t);
     }
   });
-function m(s) {
-  const e = n[`movie-${s}`],
-    i = document.getElementById(`hero-section-${s}`);
-  if (!i) return "Given id does not exist";
+function u(a) {
+  const e = d[`movie-${a}`],
+    t = document.getElementById(`hero-section-${a}`);
+  if (!t) return "Given id does not exist";
   (document.title = e.title),
     document
       .querySelector('meta[name="description"]')
       .setAttribute("content", e.description),
-    (i.innerHTML = `   <div class=" relative h-[700px] overflow-hidden w-full">
+    (t.innerHTML = `   <div class=" relative h-[700px] overflow-hidden w-full">
   <img class="pl-20 bg-gray-800" src="${e.imagemain}" class=" h-[600px] w-full" alt="${e.title}" loading="lazy" />
   <div class="card-text pt-40 pl-20 items-center space-y-10 absolute left-0 top-0 bottom-0 w-2/5 p-5 text-white  "
       style="background: rgb(0,0,0);
@@ -143,7 +142,7 @@ function m(s) {
   </div>
 </div>
 
-<div class=" -mt-4 " >
+<div class="  -mt-4 " >
 <div class="wraper items-center flex justify-between mx-16 px-10 py-2 backdrop-blur-2xl" style="background: rgb(0,0,0);
 background: linear-gradient(90deg, rgba(56, 56, 56, 0.583) 0%, rgb(20, 20, 20) 100%);">
     <div class="image-text flex  space-x-8 items-center">
@@ -159,11 +158,11 @@ background: linear-gradient(90deg, rgba(56, 56, 56, 0.583) 0%, rgb(20, 20, 20) 1
 <div class="mx-16 flex flex-col space-y-5 text-center my-20">
     <div class="border-gradient "></div>
     
-<span class="text-white flex flex-col " style="font-size: 18px;"> ${e.extranote}</span>
+<span class="text-white flex flex-col "> ${e.extranote}</span>
 <div class="border-gradient "></div>
 </div> `);
 }
-const h = `
+const f = `
 <div
 class="max-w-screen-xl px-4 py-5 mx-auto space-y-8 overflow-hidden  tails-selected-element">
 
@@ -197,41 +196,198 @@ class="max-w-screen-xl px-4 py-5 mx-auto space-y-8 overflow-hidden  tails-select
         href="https://www.linkedin.com/in/swastikdan">Swastik Dan</a>&nbsp;.</p>
 </div>
 `;
-document.getElementById("footer").innerHTML = h;
+document.getElementById("footer").innerHTML = f;
 window.onload = function () {
-  let s = document.querySelectorAll(".random-image"),
+  let a = document.querySelectorAll(".random-image"),
     e = [];
-  for (let i = 0; i < s.length; i++) {
-    let r = Math.floor(Math.random() * 32);
-    for (; e.includes(r); ) r = Math.floor(Math.random() * 32);
-    e.push(r),
-      (s[i].src =
+  for (let t = 0; t < a.length; t++) {
+    let s = Math.floor(Math.random() * 32);
+    for (; e.includes(s); ) s = Math.floor(Math.random() * 32);
+    e.push(s),
+      (a[t].src =
         "https://ik.imagekit.io/swastik/Netflix/page-cards/image-" +
-        (r + 1) +
+        (s + 1) +
         ".jpg");
   }
 };
-const f = `
+const w = `
 <span class="text-white text-3xl" >More Like This</span>
 <div class="row-1 flex justify-between mt-5">
-<img class="random-image rounded-sm block" width="332"  src="" loading="lazy" alt="More Like This Movie">
+<img class="random-image rounded-sm block" width="332"  src="" loading="lazy">
 
-<img class="random-image rounded-sm block" width="332"  src="" loading="lazy" alt="More Like This Movie">
-<img class="random-image rounded-sm block" width="332"  src="" loading="lazy" alt="More Like This Movie">
-<img class="random-image rounded-sm block" width="332"  src="" loading="lazy" alt="More Like This Movie">
+<img class="random-image rounded-sm block" width="332"  src="" loading="lazy">
+<img class="random-image rounded-sm block" width="332"  src="" loading="lazy">
+<img class="random-image rounded-sm block" width="332"  src="" loading="lazy">
 </div>
 <div class="row-1 flex justify-between mt-5">
-<img class="random-image rounded-sm block" width="332"  src="" loading="lazy" alt="More Like This Movie">
-<img class="random-image rounded-sm block" width="332"  src="" loading="lazy" alt="More Like This Movie">
-<img class="random-image rounded-sm block" width="332"  src="" loading="lazy" alt="More Like This Movie">
-<img class="random-image rounded-sm block" width="332"  src="" loading="lazy" alt="More Like This Movie">
+<img class="random-image rounded-sm block" width="332"  src="" loading="lazy">
+<img class="random-image rounded-sm block" width="332"  src="" loading="lazy">
+<img class="random-image rounded-sm block" width="332"  src="" loading="lazy">
+<img class="random-image rounded-sm block" width="332"  src="" loading="lazy">
 </div>
 <div class="row-1 flex justify-between mt-5">
-<img class="random-image rounded-sm block" width="332"  src="" loading="lazy" alt="More Like This Movie">
-<img class="random-image rounded-sm block" width="332"  src="" loading="lazy" alt="More Like This Movie">
-<img class="random-image rounded-sm block" width="332"  src="" loading="lazy" alt="More Like This Movie">
-<img class="random-image rounded-sm block" width="332"  src="" loading="lazy" alt="More Like This Movie">
+<img class="random-image rounded-sm block" width="332"  src="" loading="lazy">
+<img class="random-image rounded-sm block" width="332"  src="" loading="lazy">
+<img class="random-image rounded-sm block" width="332"  src="" loading="lazy">
+<img class="random-image rounded-sm block" width="332"  src="" loading="lazy">
 </div>
 <div class="border-gradient pt-20 "></div>
 `;
-document.getElementById("more-like-this").innerHTML = f;
+document.getElementById("more-like-this").innerHTML = w;
+function y(a) {
+  var e = document.createElement("iframe");
+  e.setAttribute(
+    "src",
+    "https://www.youtube.com/embed/" + a.dataset.id + "?autoplay=1&rel=0"
+  ),
+    e.setAttribute("frameborder", "0"),
+    e.setAttribute("allowfullscreen", "1"),
+    e.setAttribute(
+      "allow",
+      "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+    ),
+    a.parentNode.replaceChild(e, a);
+}
+function v() {
+  for (
+    var a = document.getElementsByClassName("youtube-player"), e = 0;
+    e < a.length;
+    e++
+  ) {
+    var t = a[e].dataset.id,
+      s = document.createElement("div");
+    s.setAttribute("data-id", t);
+    var i = document.createElement("img");
+    (i.src = "//i.ytimg.com/vi/ID/hqdefault.jpg".replace("ID", t)),
+      s.appendChild(i);
+    var o = document.createElement("div");
+    o.setAttribute("class", "play"),
+      s.appendChild(o),
+      (s.onclick = function () {
+        y(this);
+      }),
+      a[e].appendChild(s);
+  }
+}
+document.addEventListener("DOMContentLoaded", v);
+let c;
+fetch("/assets/video-id.json")
+  .then((a) => a.json())
+  .then((a) => {
+    c = a;
+    for (let e = 1; e <= 38; e++) {
+      const t = `video-${e}`,
+        s = b(t);
+      console.log(s);
+    }
+  });
+function b(a) {
+  const e = c[a],
+    t = document.getElementById(`popup-${a.split("-")[1]}`);
+  t.innerHTML = `
+
+  <span class="close" onclick="closeSlide(${e.vno})">&times;</span>
+  <lite-youtube class="popup-content" videoid="${e.videoId}" style="background-image: url('https://i.ytimg.com/vi/${e.videoId}/maxresdefault.jpg');"></lite-youtube>
+`;
+}
+const x = 38;
+let p = "";
+for (let a = 1; a <= x; a++) p += `<div id="popup-${a}" class="popup"></div>`;
+document.getElementById("video-dispaly").innerHTML = p;
+class n extends HTMLElement {
+  connectedCallback() {
+    this.videoId = this.getAttribute("videoid");
+    let e = this.querySelector(".lty-playbtn");
+    if (
+      ((this.playLabel =
+        (e && e.textContent.trim()) ||
+        this.getAttribute("playlabel") ||
+        "Play"),
+      this.style.backgroundImage ||
+        (this.style.backgroundImage = `url("https://i.ytimg.com/vi/${this.videoId}/hqdefault.jpg")`),
+      e ||
+        ((e = document.createElement("button")),
+        (e.type = "button"),
+        e.classList.add("lty-playbtn"),
+        this.append(e)),
+      !e.textContent)
+    ) {
+      const t = document.createElement("span");
+      (t.className = "lyt-visually-hidden"),
+        (t.textContent = this.playLabel),
+        e.append(t);
+    }
+    e.removeAttribute("href"),
+      this.addEventListener("pointerover", n.warmConnections, { once: !0 }),
+      this.addEventListener("click", this.addIframe),
+      (this.needsYTApiForAutoplay =
+        navigator.vendor.includes("Apple") ||
+        navigator.userAgent.includes("Mobi"));
+  }
+  static addPrefetch(e, t, s) {
+    const i = document.createElement("link");
+    (i.rel = e), (i.href = t), s && (i.as = s), document.head.append(i);
+  }
+  static warmConnections() {
+    n.preconnected ||
+      (n.addPrefetch("preconnect", "https://www.youtube-nocookie.com"),
+      n.addPrefetch("preconnect", "https://www.google.com"),
+      n.addPrefetch("preconnect", "https://googleads.g.doubleclick.net"),
+      n.addPrefetch("preconnect", "https://static.doubleclick.net"),
+      (n.preconnected = !0));
+  }
+  fetchYTPlayerApi() {
+    window.YT ||
+      (window.YT && window.YT.Player) ||
+      (this.ytApiPromise = new Promise((e, t) => {
+        var s = document.createElement("script");
+        (s.src = "https://www.youtube.com/iframe_api"),
+          (s.async = !0),
+          (s.onload = (i) => {
+            YT.ready(e);
+          }),
+          (s.onerror = t),
+          this.append(s);
+      }));
+  }
+  async addYTPlayerIframe(e) {
+    this.fetchYTPlayerApi(), await this.ytApiPromise;
+    const t = document.createElement("div");
+    this.append(t);
+    const s = Object.fromEntries(e.entries());
+    new YT.Player(t, {
+      width: "100%",
+      videoId: this.videoId,
+      playerVars: s,
+      events: {
+        onReady: (i) => {
+          i.target.playVideo();
+        },
+      },
+    });
+  }
+  async addIframe() {
+    if (this.classList.contains("lyt-activated")) return;
+    this.classList.add("lyt-activated");
+    const e = new URLSearchParams(this.getAttribute("params") || []);
+    if (
+      (e.append("autoplay", "1"),
+      e.append("playsinline", "1"),
+      this.needsYTApiForAutoplay)
+    )
+      return this.addYTPlayerIframe(e);
+    const t = document.createElement("iframe");
+    (t.width = 560),
+      (t.height = 315),
+      (t.title = this.playLabel),
+      (t.allow =
+        "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"),
+      (t.allowFullscreen = !0),
+      (t.src = `https://www.youtube-nocookie.com/embed/${encodeURIComponent(
+        this.videoId
+      )}?${e.toString()}`),
+      this.append(t),
+      t.focus();
+  }
+}
+customElements.define("lite-youtube", n);
