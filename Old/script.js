@@ -33,8 +33,9 @@
     fetch(e.href, i);
   }
 })();
+let cdn='https://res.cloudinary.com/demo/image/fetch/f_auto,q_auto/';
 const h =
-  '\n<div class="z-[1000] fixed overflow-hidden w-full h-full  bg-black flex items-center justify-center ">\n    <img class="animate-spin w-20" src="https://assets.nflxext.com/en_us/pages/wiplayer/site-spinner.png"\n        alt="Preloader">\n</div>\n';
+  '\n<div class="z-[1000] fixed overflow-hidden w-full h-full  bg-black flex items-center justify-center ">\n    <img class="animate-spin w-20" src="${cdn}https://assets.nflxext.com/en_us/pages/wiplayer/site-spinner.png"\n        alt="Preloader">\n</div>\n';
 document.getElementById("loader").innerHTML = h;
 var y = document.getElementById("loader");
 window.addEventListener("load", function () {
