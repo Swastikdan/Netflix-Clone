@@ -1,3 +1,0 @@
-This are the Js files used in the site.
-It's Been Complied and Minified By Vite 
-Json flies used to Populate the Site
