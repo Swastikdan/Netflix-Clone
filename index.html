@@ -22,10 +22,14 @@
 <body>
     <!-- Preloader -->
     <div id="loader"></div>
-<!--     <div
-        class="z-[1000] fixed overflow-hidden w-full h-full  bg-black  flex items-center justify-center text-white text-center text-xl p-5 lg:hidden ">
-        Please Open In a Bigger Devie <br> This Site is Not Optimised For Smaller Devices
-    </div> -->
+<div class="popup z-[1000] fixed overflow-hidden w-full h-full bg-black flex items-center justify-center text-white text-center text-xl p-5 lg:hidden">
+    <button class="close-button absolute top-2 right-2 text-white hover:text-gray-400 focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+    </button>
+    Please Open In a Bigger Devie <br> This Site is Not Optimised For Smaller Devices
+</div>
     <!--------->
     <!-- Header-->
     <header id="header"
@@ -61,7 +65,12 @@
         function closeSlide(id) {
             document.getElementById("popup-" + id).style.display = "none";
         }
- 
+ const closeButton = document.querySelector('.close-button');
+const popup = document.querySelector('.popup');
+
+closeButton.addEventListener('click', () => {
+    popup.style.display = 'none';
+});
     </script>
 </body>
 
