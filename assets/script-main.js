@@ -261,7 +261,7 @@ function Ae(e) {
 
     <div class="mt-5 pl-9"> 
 
-<div class=" card container relative w-[300px]  items-center duration-150 ease-in hover:scale-125 overflow-hidden rounded-xl cursor-pointer">
+<div class=" card container relative w-[300px]  items-center duration-300 ease-in hover:scale-125 overflow-hidden rounded-xl cursor-pointer">
   <img width="300" class="block rounded-xl lazy" src="${
     Oe + t.cardimage
   }" alt="${t.title}"  />
