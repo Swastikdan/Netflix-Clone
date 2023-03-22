@@ -90,7 +90,7 @@ window.addEventListener("scroll", () => {
     : re.classList.remove("scroll");
 });
 let fe,
-  ne = "https://res.cloudinary.com/dytlajwyl/image/fetch/f_auto,q_auto/";
+ 
 fetch("/assets/movies-db.json")
   .then((e) => e.json())
   .then((e) => {
@@ -243,7 +243,7 @@ class="max-w-screen-xl px-4 py-5 mx-auto space-y-8 overflow-hidden  tails-select
 `;
 document.getElementById("footer").innerHTML = Ie;
 let ve,
-  Oe = "https://res.cloudinary.com/dytlajwyl/image/fetch/f_auto,q_auto/";
+
 fetch("/assets/movies-db.json")
   .then((e) => e.json())
   .then((e) => {
