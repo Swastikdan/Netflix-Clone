@@ -30,7 +30,7 @@
 })();
 const Me = `
 <div class="z-[1000] fixed overflow-hidden w-full h-full  bg-black flex items-center justify-center ">
-    <img class="animate-spin w-20" src="https://res.cloudinary.com/demo/image/fetch/f_auto,q_10/https://assets.nflxext.com/en_us/pages/wiplayer/site-spinner.png"
+    <img class="animate-spin w-20" src="https://assets.nflxext.com/en_us/pages/wiplayer/site-spinner.png"
         alt="Preloader">
 </div>
 `;
@@ -89,8 +89,7 @@ window.addEventListener("scroll", () => {
     ? re.classList.add("scroll")
     : re.classList.remove("scroll");
 });
-let fe,
- 
+let fe;
 fetch("/assets/movies-db.json")
   .then((e) => e.json())
   .then((e) => {
@@ -111,12 +110,12 @@ function N(e) {
 
   <div class=" relative float-left w-full">
   <img class="pl-20 bg-gray-800" src="${
-    ne + t.imagemain
+   t.imagemain
   }" class=" h-[600px] w-full lazy" alt="${t.title}" loading="${s}" />
   <div class="card-text pt-32 pl-20 items-center space-y-10 absolute left-0 top-0 bottom-0 w-2/5 p-5 text-white  "
       style="background: rgb(0,0,0);
       background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.891281512605042) 40%, rgba(0,0,0,0.8044467787114846) 50%, rgba(0,0,0,0.6980042016806722) 60%, rgba(0,0,0,0.6027661064425771) 70%, rgba(0,0,0,0.3982843137254902) 80%, rgba(0,0,0,0.19940476190476186) 90%, rgba(0,0,0,0) 100%);">
-      <img width="300px" src="${ne + t.imagetext}" alt="${
+      <img width="300px" src="${t.imagetext}" alt="${
       t.title
     }" loading="${s}"/>
       <div class="space-y-4">
@@ -242,8 +241,7 @@ class="max-w-screen-xl px-4 py-5 mx-auto space-y-8 overflow-hidden  tails-select
 </div>
 `;
 document.getElementById("footer").innerHTML = Ie;
-let ve,
-
+let ve;
 fetch("/assets/movies-db.json")
   .then((e) => e.json())
   .then((e) => {
@@ -261,9 +259,9 @@ function Ae(e) {
 
     <div class="mt-5 pl-9"> 
 
-<div class=" card container relative w-[300px]  items-center duration-300 ease-in hover:scale-125 overflow-hidden rounded-xl cursor-pointer">
+<div class=" card container relative w-[300px]  items-center duration-150 ease-in hover:scale-125 overflow-hidden rounded-xl cursor-pointer">
   <img width="300" class="block rounded-xl lazy" src="${
-    Oe + t.cardimage
+   t.cardimage
   }" alt="${t.title}"  />
   <div class="overlay absolute bottom-0 flex w-[300px] justify-between space-y-3 bg-clip-padding px-4 py-3  text-white opacity-0 ease-in-out">
     <div class=" description space-y-1">
