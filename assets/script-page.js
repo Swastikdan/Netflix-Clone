@@ -43,7 +43,7 @@ const g = `
 
 <div class="flex space-x-20">
     <a href="/">
-        <img width="100" src="https://res.cloudinary.com/dytlajwyl/image/upload/f_auto,q_auto/v1676497705/Netflix/netflix_klvt8k.svg" alt="Logo-Netflix">
+        <img width="100" src="https://ik.imagekit.io/swastik/logo_NrXzrnbaO.png?updatedAt=1693598325444" alt="Logo">
     </a>
     <ul class="nav  flex flex-row flex-wrap   space-x-8 text-[16px]" >
         <li><a href="/"
@@ -77,7 +77,7 @@ const g = `
             d="M440.08 341.31c-1.66-2-3.29-4-4.89-5.93-22-26.61-35.31-42.67-35.31-118 0-39-9.33-71-27.72-95-13.56-17.73-31.89-31.18-56.05-41.12a3 3 0 01-.82-.67C306.6 51.49 282.82 32 256 32s-50.59 19.49-59.28 48.56a3.13 3.13 0 01-.81.65c-56.38 23.21-83.78 67.74-83.78 136.14 0 75.36-13.29 91.42-35.31 118-1.6 1.93-3.23 3.89-4.89 5.93a35.16 35.16 0 00-4.65 37.62c6.17 13 19.32 21.07 34.33 21.07H410.5c14.94 0 28-8.06 34.19-21a35.17 35.17 0 00-4.61-37.66zM256 480a80.06 80.06 0 0070.44-42.13 4 4 0 00-3.54-5.87H189.12a4 4 0 00-3.55 5.87A80.06 80.06 0 00256 480z">
         </path>
     </svg>
-    <img class="w-7 rounded-md " src="https://res.cloudinary.com/dytlajwyl/image/upload/f_auto,q_20/v1676497722/Netflix/profile-pic_hrzhic.png" alt="Swastik Dan Profile Image">
+    <img class="w-7 rounded-md " src="https://ik.imagekit.io/swastik/profile-pic_0fb4kU1b2.png?updatedAt=1693598325671" alt="Swastik Dan Profile Image">
 </div>
 
 
@@ -188,8 +188,6 @@ class="max-w-screen-xl px-4 py-5 mx-auto space-y-8 overflow-hidden  tails-select
                 d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z">
             </path>
         </svg></a>
-        <a target="_blank" rel="noopener noreferrer" href="https://www.swastikdan.tech/"
-        class="text-gray-400 hover:text-gray-500"><span class="sr-only">Website</span><img width="30" src="https://res.cloudinary.com/dubqnzagc/image/fetch/f_auto,q_auto/https://main--swastikdan.netlify.app/assets/logo-header.webp" alt="" srcset=""></a>
     </div>
 <p class="mt-8 text-base leading-6 text-center text-gray-400 helveticarounded_bold">Made with 💕 by &nbsp;<a
         target=" _blank" rel="noopener noreferrer" class="hover:underline hover:underline-offset-4"
@@ -391,3 +389,15 @@ class n extends HTMLElement {
   }
 }
 customElements.define("lite-youtube", n);
+// Create a new link element
+var linkElement = document.createElement('link');
+
+// Set the attributes for the link element
+linkElement.rel = 'apple-touch-icon';
+linkElement.href = 'https://ik.imagekit.io/swastik/logo_NrXzrnbaO.png?updatedAt=1693598325444';
+
+// Get the head element of your HTML document
+var headElement = document.getElementsByTagName('head')[0];
+
+// Append the link element to the head
+headElement.appendChild(linkElement);
