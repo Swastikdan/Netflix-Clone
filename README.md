@@ -17,7 +17,7 @@ This is a clone of the Netflix website created for learning purposes. The projec
 To get started with this project, you can simply clone the repository to your local machine and open the `index.html` file in a web browser.
 
 ```bash
-git clone https://github.com/your-username/netflix-clone.git
+git clone https://github.com/Swastikdan/netflix-clone.git
 cd netflix-clone
 open index.html
 ```
